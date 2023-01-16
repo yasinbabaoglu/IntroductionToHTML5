@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="gonder.html" method="post">
+        <fieldset>
+            <legend>İsim Bilgileri</legend>
+            <label for="ad">Adınızı Girin: </label>
+            <input id="ad" type="text"  name="ad"><br><br>
+            
+            <label for="soyad">Soyadınızı Girin: </label>
+            <input id="soyad" type="text"   name="soyad"><br><br>
+
+            <label for="il">Şehir Girin: </label>
+            <input list="sehirler" id="il" name="il"><br><br>
+            <datalist id="sehirler">
+                <option value="bursa">
+                <option value="istanbul">
+                <option value="konya">
+                <option value="ankara">
+                <option value="izmir">
+            </datalist>
+        </fieldset>
+        <label for="ad">Adınızı Girin: </label>
+        <input id="ad" type="text"  name="ad"><br><br>
+        
+        <label for="soyad">Soyadınızı Girin: </label>
+        <input id="soyad" type="text"   name="soyad"><br><br>
+
+        <input type="radio" name="cinsiyet" value="erkek" id="erkek" checked="checked">
+        <label for="erkek">Erkek</label>
+
+        <input type="radio" name="cinsiyet" value="kadin" id="kadin">
+        <label for="kadin">Kadın</label>
+
+        <br><br>
+        <input type="checkbox" name="chbmavi" id="mavi" value="mavi" checked="checked">
+        <label for="mavi">Mavi</label>
+        <input type="checkbox" name="chbyesil" id="yesil" value="yesil">
+        <label for="yesil">Yeşil</label>
+        <input type="checkbox" name="chbsari" id="sari" value="sari">
+        <label for="sari">Sarı</label>
+        <br><br>
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Formu sil">
+        <input type="button" onclick="alert('Hello World')" value="Alert">
+        <br><br>
+        <label for="arabalar">Favori Marka</label>
+        <select name="arabalar" id="arabalar" >
+            <option value="honda">Honda</option>
+            <option selected value="mercedes">Mercedes</option>
+            <option value="bmw">BMW</option>
+            <option value="renault">Renault</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="seat">Seat</option>
+        </select>
+        <br><br>
+        <label for="adres">Adres:</label>
+        <textarea name="adres" id="adres" cols="50" rows="2"></textarea>
+        <br><br>
+        <button onclick="alert('Selam')">Buton</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        caption{
+            font-size: 64px;
+        }
+        table, #Tablo1 td, #Tablo1 th{
+            border: 2px solid red;
+            border-collapse: collapse;
+        }
+        
+        table, #Tablo2 td, #Tablo2 th{
+            border: 3px solid green;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table id="Tablo1" style="width: 100%;">
+        <caption>Deneme Tablosu</caption>
+        <tr>
+            <th>
+                Ad
+            </th>
+            <th>
+                Soyad
+            </th>
+            <th>
+                Yaş
+            </th>
+            <th colspan="2">
+                Adres
+            </th>
+            <th>
+                Resim
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Yasin
+            </td>
+            <td>
+                Babaoğlu
+            </td>
+            <td>
+                25
+            </td>
+            <td>
+                Ankara
+            </td>
+            <td>
+                Konya
+            </td>
+            <td>
+                <img src="me.jpeg" alt="me" style="width: 50px; height: 50px;">
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <table id="Tablo2" style="width: 100%;">
+        <caption>İsim Tablosu</caption>
+        <tr>
+            <th>
+                Ad:
+            </th>
+            <td>Yasin Babaoğlu</td>
+        </tr>
+        <tr>
+            <th rowspan="3">Telefon:</th>
+            <td>1241242</td>
+        </tr>
+        <tr>
+            <td>adawgfawfd</td>
+        </tr>
+        <tr>
+            <td>1253426542312fsve</td>
+        </tr>
+    </table>
+
+</body>
+</html>
